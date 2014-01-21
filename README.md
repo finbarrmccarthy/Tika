@@ -1,6 +1,6 @@
-This is a simple PHP Wrapper for Apache Tika.
+This is a ZF2 Wrapper for Apache Tika.
 
-It allows the developer to retrieve text, metadata and language from complex
+It allows you to retrieve text, metadata and language from complex
 documents.
 
 
@@ -19,7 +19,7 @@ Add the package dependency `finbarrmccarthy/tika` in your composer.json
 
     {
         "require": {
-            "finbarrmccarthy/tika": "*" 
+            "finbarrmccarthy/tika": "@dev" 
         }   
     }
 
@@ -37,7 +37,7 @@ current directory
     <?php
     use FinbarrMcCarthy\Lib\Tika\TikaApp;
      
-    $testFile = new \SplFileInfo(__DIR__."/test.odt");
+    $testFile = new \SplFileInfo(__DIR__."/yourdocument.pdf");
     $tikaApp = new TikaApp();
      
     $plaintext = $tikaApp->getText($testFile);
