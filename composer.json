@@ -1,0 +1,19 @@
+{
+    "name": "finbarrmccarthy/tika",
+    "description": "A wrapper for Tika in ZF2",
+    "keywords" : ["tika", "zf2"],
+
+
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/process": "~2.1"
+    },
+
+
+    "autoload": {
+        "psr-0": {
+            "FinbarrMcCarthy\\Lib\\Tika": ""
+        }
+    },
+    "target-dir": "FinbarrMcCarthy/Lib/Tika"
+}
